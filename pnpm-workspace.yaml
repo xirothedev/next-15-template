@@ -1,4 +1,6 @@
 onlyBuiltDependencies:
   - '@tailwindcss/oxide'
+  - inngest-cli
+  - protobufjs
   - sharp
   - unrs-resolver
