@@ -1,0 +1,13 @@
+Dockerfile
+.dockerignore
+node_modules
+npm-debug.log
+.next
+.git
+
+README.md
+CODE_OF_CONDUCT.md
+.editorconfig
+commitlint.config.js
+LICENSE.md
+SECURITY.md

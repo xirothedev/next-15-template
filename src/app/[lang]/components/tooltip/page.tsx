@@ -5,7 +5,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
-export function TooltipDemo() {
+export default function TooltipDemo() {
   return (
     <Tooltip>
       <TooltipTrigger asChild>

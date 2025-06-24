@@ -1,4 +1,4 @@
-import type { Locale } from "@root/i18n-config";
+import type { Locale } from "@/i18n-config";
 import type { Metadata } from "next";
 import { Be_Vietnam_Pro } from "next/font/google";
 import "../globals.css";

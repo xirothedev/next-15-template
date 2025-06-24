@@ -5,7 +5,7 @@ import {
   ToggleGroupItem,
 } from "@/components/ui/toggle-group"
 
-export function ToggleGroupDemo() {
+export default function ToggleGroupDemo() {
   return (
     <ToggleGroup variant="outline" type="multiple">
       <ToggleGroupItem value="bold" aria-label="Toggle bold">

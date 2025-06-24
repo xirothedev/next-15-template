@@ -1,5 +1,5 @@
-import { getDictionary } from "@root/get-dictionary";
-import type { Locale } from "@root/i18n-config";
+import { getDictionary } from "@/get-dictionary";
+import type { Locale } from "@/i18n-config";
 import Image from "next/image";
 
 export default async function Home({
