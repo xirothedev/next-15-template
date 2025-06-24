@@ -20,7 +20,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.14",
@@ -48,18 +49,43 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.0.5",
+    "@commitlint/cli": "19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "^9",
     "eslint-config-next": "15.3.4",
+    "lint-staged": "16.1.2",
     "tailwindcss": "^4",
     "tw-animate-css": "^1.3.4",
     "typescript": "^5"
   },
   "overrides": {
     "react-is": "^19.0.0-rc-69d4b800-20241021"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "npx --no -- commitlint --edit $1",
+      "pre-commit": "npx --no -- lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "biome lint --write .",
+      "git add ."
+    ],
+    "*.{json,css,html,md}": [
+      "biome format --write .",
+      "git add ."
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
