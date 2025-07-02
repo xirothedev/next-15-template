@@ -343,4 +343,4 @@ export const LongContent: Story = {
 			</HoverCardContent>
 		</HoverCard>
 	),
-}; 
+};

@@ -300,4 +300,4 @@ export const CustomStyling: Story = {
 			</ContextMenuContent>
 		</ContextMenu>
 	),
-}; 
+};

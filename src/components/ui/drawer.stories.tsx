@@ -306,4 +306,4 @@ export const WithoutFooter: Story = {
 			</DrawerContent>
 		</Drawer>
 	),
-}; 
+};

@@ -1,7 +1,7 @@
 "use client";
 
 import {
-  type ColumnFiltersState,
+	type ColumnFiltersState,
 	type VisibilityState,
 	type SortingState,
 	type ColumnDef,

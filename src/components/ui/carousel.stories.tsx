@@ -282,4 +282,4 @@ export const WithoutButtons: Story = {
 			</CarouselContent>
 		</Carousel>
 	),
-}; 
+};

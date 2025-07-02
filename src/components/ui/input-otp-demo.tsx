@@ -159,4 +159,4 @@ export function InputOTPSizesDemo() {
 			<InputOTPDemo maxLength={4} size="large" showClearButton />
 		</div>
 	);
-} 
+}

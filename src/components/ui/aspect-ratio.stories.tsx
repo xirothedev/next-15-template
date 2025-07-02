@@ -24,8 +24,8 @@ export const Default: Story = {
 			<AspectRatio {...args}>
 				<Image
 					src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
-          height={0}
-          width={0}
+					height={0}
+					width={0}
 					alt="Mountain landscape with trees"
 					className="object-cover w-full h-full rounded-md"
 				/>
@@ -41,8 +41,8 @@ export const Square: Story = {
 			<AspectRatio {...args} ratio={1}>
 				<Image
 					src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
-          height={0}
-          width={0}
+					height={0}
+					width={0}
 					alt="Mountain landscape with trees"
 					className="object-cover w-full h-full rounded-md"
 				/>
@@ -58,8 +58,8 @@ export const Portrait: Story = {
 			<AspectRatio {...args} ratio={3 / 4}>
 				<Image
 					src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
-          height={0}
-          width={0}
+					height={0}
+					width={0}
 					alt="Mountain landscape with trees"
 					className="object-cover w-full h-full rounded-md"
 				/>
@@ -75,8 +75,8 @@ export const UltraWide: Story = {
 			<AspectRatio {...args} ratio={21 / 9}>
 				<Image
 					src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
-          height={0}
-          width={0}
+					height={0}
+					width={0}
 					alt="Mountain landscape with trees"
 					className="object-cover w-full h-full rounded-md"
 				/>
@@ -135,4 +135,4 @@ export const CustomContent: Story = {
 			</AspectRatio>
 		</div>
 	),
-}; 
+};

@@ -484,4 +484,4 @@ export const Complex: Story = {
 			</MenubarMenu>
 		</Menubar>
 	),
-}; 
+};

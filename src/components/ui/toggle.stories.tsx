@@ -424,4 +424,4 @@ export function ToggleDemo() {
 			<Bold className="h-4 w-4" />
 		</Toggle>
 	);
-} 
+}

@@ -530,4 +530,4 @@ export const WithoutViewport: Story = {
 			</NavigationMenuList>
 		</NavigationMenu>
 	),
-}; 
+};

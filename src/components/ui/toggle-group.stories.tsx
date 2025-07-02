@@ -52,7 +52,7 @@ export const Default: Story = {
 
 // Text alignment toggle group
 export const TextAlignment: Story = {
-  args: { type: "single", variant: "outline" },
+	args: { type: "single", variant: "outline" },
 	render: (args) => (
 		<ToggleGroup {...args}>
 			<ToggleGroupItem value="left" aria-label="Align left">
@@ -73,7 +73,7 @@ export const TextAlignment: Story = {
 
 // List formatting toggle group
 export const ListFormatting: Story = {
-  args: { type: "single", variant: "outline" },
+	args: { type: "single", variant: "outline" },
 	render: (args) => (
 		<ToggleGroup {...args}>
 			<ToggleGroupItem value="bullet" aria-label="Bullet list">
@@ -94,7 +94,7 @@ export const ListFormatting: Story = {
 
 // Heading levels toggle group
 export const HeadingLevels: Story = {
-  args: { type: "single", variant: "outline" },
+	args: { type: "single", variant: "outline" },
 	render: (args) => (
 		<ToggleGroup {...args}>
 			<ToggleGroupItem value="h1" aria-label="Heading 1">
@@ -304,7 +304,7 @@ export const MixedDisabled: Story = {
 
 // Custom styling toggle group
 export const CustomStyling: Story = {
-  args: { type: "multiple", variant: "outline" },
+	args: { type: "multiple", variant: "outline" },
 	render: (args) => (
 		<ToggleGroup
 			{...args}
@@ -375,4 +375,4 @@ export function ToggleGroupDemo() {
 			</ToggleGroupItem>
 		</ToggleGroup>
 	);
-} 
+}

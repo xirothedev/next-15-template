@@ -397,4 +397,4 @@ export function PaginationDemo() {
 			</PaginationContent>
 		</Pagination>
 	);
-} 
+}

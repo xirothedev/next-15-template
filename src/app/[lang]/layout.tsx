@@ -7,8 +7,8 @@ const beVietnamPro = Be_Vietnam_Pro({
 	variable: "--font-be-vietnam-pro",
 	subsets: ["latin"],
 	weight: ["400", "500", "600", "700"],
-  preload: true,
-  fallback: ["sans-serif"]
+	preload: true,
+	fallback: ["sans-serif"],
 });
 
 export const metadata: Metadata = {
@@ -27,11 +27,7 @@ export default async function RootLayout({
 
 	return (
 		<html lang={lang}>
-			<body
-				className={`${beVietnamPro.variable} antialiased`}
-			>
-				{children}
-			</body>
+			<body className={`${beVietnamPro.variable} antialiased`}>{children}</body>
 		</html>
 	);
 }
