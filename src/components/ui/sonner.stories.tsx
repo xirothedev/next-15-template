@@ -206,7 +206,8 @@ export const CustomPromise: Story = {
 				toast.promise(
 					new Promise((resolve, reject) => {
 						setTimeout(() => {
-							Math.random() > 0.5 ? resolve("Success") : reject("Error");
+							if (Math.random() > 0.5) resolve("Success");
+							else reject("Error");
 						}, 2000);
 					}),
 					{

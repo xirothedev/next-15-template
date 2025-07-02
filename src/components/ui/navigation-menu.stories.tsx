@@ -94,7 +94,7 @@ export const Default: Story = {
 						<ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
 							<li className="row-span-3">
 								<NavigationMenuLink asChild>
-									<a
+									<Link
 										className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md"
 										href="/"
 									>
@@ -104,7 +104,7 @@ export const Default: Story = {
 										<p className="text-muted-foreground text-sm leading-tight">
 											Beautifully designed components built with Tailwind CSS.
 										</p>
-									</a>
+									</Link>
 								</NavigationMenuLink>
 							</li>
 							<ListItem href="/docs" title="Introduction">
@@ -264,7 +264,7 @@ export const WithDropdown: Story = {
 						<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
 							<li className="row-span-3">
 								<NavigationMenuLink asChild>
-									<a
+									<Link
 										className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md"
 										href="/"
 									>
@@ -274,7 +274,7 @@ export const WithDropdown: Story = {
 										<p className="text-sm leading-tight text-muted-foreground">
 											Our most popular product with amazing features.
 										</p>
-									</a>
+									</Link>
 								</NavigationMenuLink>
 							</li>
 							<ListItem href="/products/web" title="Web Development">
@@ -438,7 +438,7 @@ export const WithMixedContent: Story = {
 						<ul className="grid gap-3 p-4 w-[400px] md:w-[500px] lg:w-[600px] lg:grid-cols-[.75fr_1fr]">
 							<li className="row-span-3">
 								<NavigationMenuLink asChild>
-									<a
+									<Link
 										className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md"
 										href="/"
 									>
@@ -449,7 +449,7 @@ export const WithMixedContent: Story = {
 											Complete solution for enterprise customers with advanced
 											features and support.
 										</p>
-									</a>
+									</Link>
 								</NavigationMenuLink>
 							</li>
 							<ListItem href="/solutions/small-business" title="Small Business">

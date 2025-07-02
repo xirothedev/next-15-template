@@ -293,7 +293,7 @@ export const WithoutFooter: Story = {
 					<DrawerHeader>
 						<DrawerTitle>No Footer Drawer</DrawerTitle>
 						<DrawerDescription>
-							This drawer doesn't have a footer section.
+							This drawer doesn&apos;t have a footer section.
 						</DrawerDescription>
 					</DrawerHeader>
 					<div className="p-4">
