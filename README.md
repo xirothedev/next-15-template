@@ -1,5 +1,14 @@
 # Next.js 15 Template
 
+<p align="left">
+  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/node-%3E=18.0.0-green?logo=node.js" alt="Node version" /></a>
+  <a href="https://github.com/xirothedev/next-15-template/blob/main/LICENSE"><img src="https://img.shields.io/github/license/xirothedev/next-15-template?color=blue" alt="License" /></a>
+  <a href="https://github.com/xirothedev/next-15-template/actions"><img src="https://github.com/xirothedev/next-15-template/actions/workflows/ci.yml/badge.svg" alt="Build Status" /></a>
+  <a href="https://biomejs.dev/"><img src="https://img.shields.io/badge/code_style-biome-5B5B5B?logo=biome" alt="Biome" /></a>
+  <a href="https://eslint.org/"><img src="https://img.shields.io/badge/lint-eslint-4B32C3?logo=eslint" alt="ESLint" /></a>
+  <a href="https://pnpm.io/"><img src="https://img.shields.io/badge/package%20manager-pnpm-F69220?logo=pnpm" alt="pnpm" /></a>
+</p>
+
 A modern, opinionated template for building scalable web applications with Next.js 15. This template provides a solid foundation with best practices, optimized configuration, and a clean project structure to accelerate your development workflow.
 
 ---
