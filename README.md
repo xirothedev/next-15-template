@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js 15 Template
 
-## Getting Started
+A modern, opinionated template for building scalable web applications with Next.js 15. This template provides a solid foundation with best practices, optimized configuration, and a clean project structure to accelerate your development workflow.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Project Overview
+
+This repository serves as a starter template for Next.js 15 projects. It includes essential tooling, sensible defaults, and a modular architecture to help you quickly launch production-ready applications.
+
+---
+
+## ✨ Features
+
+- Next.js 15 with App Router
+- TypeScript support
+- ESLint and Prettier for code quality and formatting
+- pnpm for fast, efficient package management
+- Environment variable management
+- Modular, scalable folder structure
+- Ready-to-use API routes
+- Example components and utilities
+- Built-in support for CSS Modules and/or Tailwind CSS (customize as needed)
+- Optimized for performance and SEO
+
+---
+
+## 🛠️ Tech Stack
+
+- [Next.js 15](https://nextjs.org/)
+- [React 18](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [pnpm](https://pnpm.io/) (package manager)
+- [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/)
+- [Tailwind CSS](https://tailwindcss.com/) *(optional, remove if not used)*
+
+---
+
+## ⚡ Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [pnpm](https://pnpm.io/)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/xirothedev/next-15-template.git
+   cd next-15-template
+   ```
+2. **Install dependencies:**
+   ```bash
+   pnpm install
+   ```
+3. **Run the development server:**
+   ```bash
+   pnpm dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view the app.
+
+---
+
+## 📦 Available Scripts
+
+- `pnpm dev` — Start the development server
+- `pnpm build` — Build the application for production
+- `pnpm start` — Start the production server
+- `pnpm lint` — Run ESLint for code quality
+- `pnpm format` — Format code with Prettier
+- `pnpm test` — Run tests *(if test setup is included)*
+
+---
+
+## 📁 Folder Structure
+
+```
+next-15-template/
+├── public/           # Static assets
+├── src/
+│   ├── app/          # Next.js app directory (routes, layouts, pages)
+│   ├── components/   # Reusable UI components
+│   ├── lib/          # Utilities and helpers
+│   ├── styles/       # Global and modular styles
+│   └── ...           # Additional feature folders
+├── .env.example      # Example environment variables
+├── .eslintrc.json    # ESLint configuration
+├── .prettierrc       # Prettier configuration
+├── package.json      # Project metadata and scripts
+├── pnpm-lock.yaml    # pnpm lockfile
+└── README.md         # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🤝 Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Contributions are welcome! Please open issues or submit pull requests for improvements, bug fixes, or new features.
 
-## Learn More
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a pull request
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Resource
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [CODE OF CONDUCT](/.github/CODE_OF_CONDUCT.md)
+- [COMMIT CONVENTION](/.github/COMMIT_CONVENTION.md)
+- [CONTRIBUTING](/.github/CONTRIBUTING.md)
+- [FUNDING](/.github/FUNDING.yml)
+- [PULL REQUEST TEMPLATE](/.github/PULL_REQUEST_TEMPLATE.md)
+- [LICENSE](/LICENSE)
+- [Discord server](https://discord.gg/GsYF4xceZZ)
+- [Facebook](https://www.facebook.com/xirothedev/)
+- [Email](lethanhtrung.trungle@gmail.com)
