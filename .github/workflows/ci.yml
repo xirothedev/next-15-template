@@ -41,6 +41,3 @@ jobs:
 
       - name: Type Check
         run: pnpm typecheck
-
-      - name: Check Commit Messages
-        run: pnpm exec commitlint --from=HEAD~1 --to=HEAD
