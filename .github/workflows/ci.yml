@@ -10,28 +10,37 @@ on:
     branches: [main, develop]
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Setup Node.js 24.1.0
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+          run_install: false
+
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 24.1.0
+          node-version: 24
           cache: 'pnpm'
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
-
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
-      - name: Lint
+      - name: Run Biome Lint
         run: pnpm lint
 
-      - name: Build
-        run: pnpm build
+      - name: Run Biome Format Check
+        run: pnpm format
+
+      - name: Type Check
+        run: pnpm typecheck
+
+      - name: Check Commit Messages
+        run: pnpm exec commitlint --from=HEAD~1 --to=HEAD
