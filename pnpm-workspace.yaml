@@ -1,10 +1,10 @@
 onlyBuiltDependencies:
-  - '@tailwindcss/oxide'
-  - core-js-pure
-  - esbuild
-  - inngest-cli
-  - protobufjs
-  - sharp
-  - unrs-resolver
+    - "@tailwindcss/oxide"
+    - core-js-pure
+    - esbuild
+    - inngest-cli
+    - protobufjs
+    - sharp
+    - unrs-resolver
 packages:
-  - .
+    - .

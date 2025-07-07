@@ -59,9 +59,7 @@ export const WithTitle: Story = {
 export const WithDescription: Story = {
 	render: (args) => (
 		<Alert {...args}>
-			<AlertDescription>
-				This alert only has a description. No title is provided.
-			</AlertDescription>
+			<AlertDescription>This alert only has a description. No title is provided.</AlertDescription>
 		</Alert>
 	),
 	args: {

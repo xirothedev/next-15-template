@@ -27,26 +27,17 @@ function NavigationMenu({
 	);
 }
 
-function NavigationMenuList({
-	className,
-	...props
-}: React.ComponentProps<typeof NavigationMenuPrimitive.List>) {
+function NavigationMenuList({ className, ...props }: React.ComponentProps<typeof NavigationMenuPrimitive.List>) {
 	return (
 		<NavigationMenuPrimitive.List
 			data-slot="navigation-menu-list"
-			className={cn(
-				"group flex flex-1 list-none items-center justify-center gap-1",
-				className,
-			)}
+			className={cn("group flex flex-1 list-none items-center justify-center gap-1", className)}
 			{...props}
 		/>
 	);
 }
 
-function NavigationMenuItem({
-	className,
-	...props
-}: React.ComponentProps<typeof NavigationMenuPrimitive.Item>) {
+function NavigationMenuItem({ className, ...props }: React.ComponentProps<typeof NavigationMenuPrimitive.Item>) {
 	return (
 		<NavigationMenuPrimitive.Item
 			data-slot="navigation-menu-item"
@@ -80,10 +71,7 @@ function NavigationMenuTrigger({
 	);
 }
 
-function NavigationMenuContent({
-	className,
-	...props
-}: React.ComponentProps<typeof NavigationMenuPrimitive.Content>) {
+function NavigationMenuContent({ className, ...props }: React.ComponentProps<typeof NavigationMenuPrimitive.Content>) {
 	return (
 		<NavigationMenuPrimitive.Content
 			data-slot="navigation-menu-content"
@@ -102,11 +90,7 @@ function NavigationMenuViewport({
 	...props
 }: React.ComponentProps<typeof NavigationMenuPrimitive.Viewport>) {
 	return (
-		<div
-			className={cn(
-				"absolute top-full left-0 isolate z-50 flex justify-center",
-			)}
-		>
+		<div className={cn("absolute top-full left-0 isolate z-50 flex justify-center")}>
 			<NavigationMenuPrimitive.Viewport
 				data-slot="navigation-menu-viewport"
 				className={cn(
@@ -119,10 +103,7 @@ function NavigationMenuViewport({
 	);
 }
 
-function NavigationMenuLink({
-	className,
-	...props
-}: React.ComponentProps<typeof NavigationMenuPrimitive.Link>) {
+function NavigationMenuLink({ className, ...props }: React.ComponentProps<typeof NavigationMenuPrimitive.Link>) {
 	return (
 		<NavigationMenuPrimitive.Link
 			data-slot="navigation-menu-link"

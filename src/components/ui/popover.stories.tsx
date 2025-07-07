@@ -20,9 +20,7 @@ export const Default: Story = {
 				<PopoverTrigger asChild>
 					<Button>Open Popover</Button>
 				</PopoverTrigger>
-				<PopoverContent className={cn("text-sm")}>
-					This is a simple popover content.
-				</PopoverContent>
+				<PopoverContent className={cn("text-sm")}>This is a simple popover content.</PopoverContent>
 			</Popover>
 		</div>
 	),

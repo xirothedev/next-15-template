@@ -30,9 +30,7 @@ export default function CheckboxDemo() {
 					className="data-[state=checked]:border-blue-600 data-[state=checked]:bg-blue-600 data-[state=checked]:text-white dark:data-[state=checked]:border-blue-700 dark:data-[state=checked]:bg-blue-700"
 				/>
 				<div className="grid gap-1.5 font-normal">
-					<p className="text-sm leading-none font-medium">
-						Enable notifications
-					</p>
+					<p className="text-sm leading-none font-medium">Enable notifications</p>
 					<p className="text-muted-foreground text-sm">
 						You can enable or disable notifications at any time.
 					</p>

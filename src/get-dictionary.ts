@@ -8,5 +8,4 @@ const dictionaries = {
 	vi: () => import("../dictionaries/vi.json").then((module) => module.default),
 };
 
-export const getDictionary = async (locale: Locale) =>
-	dictionaries[locale]?.() ?? dictionaries.en();
+export const getDictionary = async (locale: Locale) => dictionaries[locale]?.() ?? dictionaries.en();

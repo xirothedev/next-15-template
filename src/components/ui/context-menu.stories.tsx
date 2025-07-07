@@ -60,16 +60,12 @@ export const Default: Story = {
 					</ContextMenuSubContent>
 				</ContextMenuSub>
 				<ContextMenuSeparator />
-				<ContextMenuCheckboxItem checked>
-					Show Bookmarks
-				</ContextMenuCheckboxItem>
+				<ContextMenuCheckboxItem checked>Show Bookmarks</ContextMenuCheckboxItem>
 				<ContextMenuCheckboxItem>Show Full URLs</ContextMenuCheckboxItem>
 				<ContextMenuSeparator />
 				<ContextMenuRadioGroup value="pedro">
 					<ContextMenuLabel inset>People</ContextMenuLabel>
-					<ContextMenuRadioItem value="pedro">
-						Pedro Duarte
-					</ContextMenuRadioItem>
+					<ContextMenuRadioItem value="pedro">Pedro Duarte</ContextMenuRadioItem>
 					<ContextMenuRadioItem value="colm">Colm Tuite</ContextMenuRadioItem>
 				</ContextMenuRadioGroup>
 			</ContextMenuContent>
@@ -107,9 +103,7 @@ export const WithDestructiveActions: Story = {
 				<ContextMenuItem>Duplicate</ContextMenuItem>
 				<ContextMenuSeparator />
 				<ContextMenuItem variant="destructive">Delete</ContextMenuItem>
-				<ContextMenuItem variant="destructive">
-					Remove from Library
-				</ContextMenuItem>
+				<ContextMenuItem variant="destructive">Remove from Library</ContextMenuItem>
 			</ContextMenuContent>
 		</ContextMenu>
 	),
@@ -257,9 +251,7 @@ export const WithDisabledItems: Story = {
 				<ContextMenuCheckboxItem checked disabled>
 					Disabled Checkbox
 				</ContextMenuCheckboxItem>
-				<ContextMenuCheckboxItem disabled>
-					Another Disabled Checkbox
-				</ContextMenuCheckboxItem>
+				<ContextMenuCheckboxItem disabled>Another Disabled Checkbox</ContextMenuCheckboxItem>
 				<ContextMenuSeparator />
 				<ContextMenuRadioGroup value="option1">
 					<ContextMenuRadioItem value="option1">Option 1</ContextMenuRadioItem>
@@ -277,10 +269,10 @@ export const WithDisabledItems: Story = {
 export const CustomStyling: Story = {
 	render: (args) => (
 		<ContextMenu {...args}>
-			<ContextMenuTrigger className="flex h-[150px] w-[300px] items-center justify-center rounded-md border-2 border-blue-300 bg-blue-50 text-blue-700 text-sm font-medium">
+			<ContextMenuTrigger className="flex h-[150px] w-[300px] items-center justify-center rounded-md border-2 border-blue-300 bg-blue-50 text-sm font-medium text-blue-700">
 				Right click for custom styling
 			</ContextMenuTrigger>
-			<ContextMenuContent className="w-56 bg-gradient-to-br from-slate-50 to-slate-100 border-slate-200">
+			<ContextMenuContent className="w-56 border-slate-200 bg-gradient-to-br from-slate-50 to-slate-100">
 				<ContextMenuItem className="hover:bg-blue-100 focus:bg-blue-100">
 					<span className="text-blue-700">Blue Item</span>
 				</ContextMenuItem>
@@ -291,10 +283,7 @@ export const CustomStyling: Story = {
 					<span className="text-purple-700">Purple Item</span>
 				</ContextMenuItem>
 				<ContextMenuSeparator className="bg-slate-300" />
-				<ContextMenuItem
-					variant="destructive"
-					className="hover:bg-red-100 focus:bg-red-100"
-				>
+				<ContextMenuItem variant="destructive" className="hover:bg-red-100 focus:bg-red-100">
 					<span className="text-red-700">Destructive Action</span>
 				</ContextMenuItem>
 			</ContextMenuContent>

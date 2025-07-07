@@ -1,11 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { Button } from "./button";
-import {
-	Tooltip,
-	TooltipContent,
-	TooltipProvider,
-	TooltipTrigger,
-} from "./tooltip";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./tooltip";
 
 const meta = {
 	title: "UI/Tooltip",
@@ -76,9 +71,7 @@ export const CustomContent: Story = {
 				<TooltipContent>
 					<div className="flex flex-col items-center">
 						<span className="font-bold">Custom Tooltip</span>
-						<span className="text-muted-foreground text-xs">
-							With more details here.
-						</span>
+						<span className="text-muted-foreground text-xs">With more details here.</span>
 					</div>
 				</TooltipContent>
 			</Tooltip>

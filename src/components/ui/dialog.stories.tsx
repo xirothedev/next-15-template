@@ -36,8 +36,8 @@ export const Default: Story = {
 					<DialogHeader>
 						<DialogTitle>Are you absolutely sure?</DialogTitle>
 						<DialogDescription>
-							This action cannot be undone. This will permanently delete your
-							account and remove your data.
+							This action cannot be undone. This will permanently delete your account and remove your
+							data.
 						</DialogDescription>
 					</DialogHeader>
 					<DialogFooter>

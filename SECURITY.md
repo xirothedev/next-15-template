@@ -5,6 +5,7 @@
 If you discover a security vulnerability in this project, please report it by emailing [lethanhtrung.trungle@gmail.com](mailto:lethanhtrung.trungle@gmail.com). Do **not** create a public GitHub issue for security-related matters.
 
 Please include as much detail as possible in your report, including:
+
 - A description of the vulnerability
 - Steps to reproduce (if applicable)
 - The impact or potential impact
@@ -18,4 +19,4 @@ We aim to support the latest major version of this project. Security fixes will 
 
 ## Disclosure Policy
 
-We ask that you give us a reasonable amount of time to address the issue before any public disclosure. We are committed to resolving security issues quickly and responsibly. 
+We ask that you give us a reasonable amount of time to address the issue before any public disclosure. We are committed to resolving security issues quickly and responsibly.

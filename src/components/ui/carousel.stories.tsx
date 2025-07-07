@@ -1,12 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-	Carousel,
-	CarouselContent,
-	CarouselItem,
-	CarouselNext,
-	CarouselPrevious,
-} from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const meta = {
 	title: "UI/Carousel",
@@ -53,10 +47,8 @@ export const WithImages: Story = {
 						<div className="p-1">
 							<Card>
 								<CardContent className="flex aspect-square items-center justify-center p-6">
-									<div className="w-full h-full bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white">
-										<span className="text-2xl font-semibold">
-											Image {index + 1}
-										</span>
+									<div className="flex h-full w-full items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 text-white">
+										<span className="text-2xl font-semibold">Image {index + 1}</span>
 									</div>
 								</CardContent>
 							</Card>
@@ -166,10 +158,10 @@ export const CustomContent: Story = {
 						<div className="p-1">
 							<Card>
 								<CardContent
-									className={`flex aspect-square items-center justify-center p-6 bg-gradient-to-br ${item.color} text-white`}
+									className={`flex aspect-square items-center justify-center bg-gradient-to-br p-6 ${item.color} text-white`}
 								>
 									<div className="text-center">
-										<h3 className="text-xl font-bold mb-2">{item.title}</h3>
+										<h3 className="mb-2 text-xl font-bold">{item.title}</h3>
 										<p className="text-sm opacity-90">{item.description}</p>
 									</div>
 								</CardContent>
@@ -230,11 +222,7 @@ export const CustomButtons: Story = {
 					</CarouselItem>
 				))}
 			</CarouselContent>
-			<CarouselPrevious
-				variant="default"
-				size="default"
-				className="h-10 w-10"
-			/>
+			<CarouselPrevious variant="default" size="default" className="h-10 w-10" />
 			<CarouselNext variant="default" size="default" className="h-10 w-10" />
 		</Carousel>
 	),

@@ -306,10 +306,7 @@ export const MixedDisabled: Story = {
 export const CustomStyling: Story = {
 	args: { type: "multiple", variant: "outline" },
 	render: (args) => (
-		<ToggleGroup
-			{...args}
-			className="bg-gradient-to-r from-blue-50 to-purple-50 border-blue-200"
-		>
+		<ToggleGroup {...args} className="border-blue-200 bg-gradient-to-r from-blue-50 to-purple-50">
 			<ToggleGroupItem value="bold" aria-label="Toggle bold">
 				<Bold className="h-4 w-4" />
 			</ToggleGroupItem>

@@ -11,8 +11,7 @@ const meta = {
 				<div className="space-y-2 p-4">
 					{Array.from({ length: 30 }, (_, i) => (
 						<p key={i} className="text-sm">
-							Line {i + 1}: Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit.
+							Line {i + 1}: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						</p>
 					))}
 				</div>

@@ -27,7 +27,7 @@ export const Default: Story = {
 					height={0}
 					width={0}
 					alt="Mountain landscape with trees"
-					className="object-cover w-full h-full rounded-md"
+					className="h-full w-full rounded-md object-cover"
 				/>
 			</AspectRatio>
 		</div>
@@ -44,7 +44,7 @@ export const Square: Story = {
 					height={0}
 					width={0}
 					alt="Mountain landscape with trees"
-					className="object-cover w-full h-full rounded-md"
+					className="h-full w-full rounded-md object-cover"
 				/>
 			</AspectRatio>
 		</div>
@@ -61,7 +61,7 @@ export const Portrait: Story = {
 					height={0}
 					width={0}
 					alt="Mountain landscape with trees"
-					className="object-cover w-full h-full rounded-md"
+					className="h-full w-full rounded-md object-cover"
 				/>
 			</AspectRatio>
 		</div>
@@ -78,7 +78,7 @@ export const UltraWide: Story = {
 					height={0}
 					width={0}
 					alt="Mountain landscape with trees"
-					className="object-cover w-full h-full rounded-md"
+					className="h-full w-full rounded-md object-cover"
 				/>
 			</AspectRatio>
 		</div>
@@ -95,7 +95,7 @@ export const Video: Story = {
 					title="YouTube video player"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowFullScreen
-					className="w-full h-full rounded-md"
+					className="h-full w-full rounded-md"
 				/>
 			</AspectRatio>
 		</div>
@@ -107,14 +107,9 @@ export const CustomContent: Story = {
 	render: (args) => (
 		<div className="w-[400px]">
 			<AspectRatio {...args}>
-				<div className="bg-gradient-to-br from-slate-100 to-slate-200 border border-slate-300 rounded-md p-6 flex flex-col items-center justify-center">
-					<div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-4">
-						<svg
-							className="w-8 h-8 text-white"
-							fill="none"
-							stroke="currentColor"
-							viewBox="0 0 24 24"
-						>
+				<div className="flex flex-col items-center justify-center rounded-md border border-slate-300 bg-gradient-to-br from-slate-100 to-slate-200 p-6">
+					<div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-blue-500">
+						<svg className="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<title>Image icon</title>
 							<path
 								strokeLinecap="round"
@@ -124,12 +119,9 @@ export const CustomContent: Story = {
 							/>
 						</svg>
 					</div>
-					<h3 className="text-lg font-semibold text-slate-800 mb-2">
-						Custom Content
-					</h3>
-					<p className="text-sm text-slate-600 text-center">
-						This demonstrates how AspectRatio can contain any content while
-						maintaining the specified ratio.
+					<h3 className="mb-2 text-lg font-semibold text-slate-800">Custom Content</h3>
+					<p className="text-center text-sm text-slate-600">
+						This demonstrates how AspectRatio can contain any content while maintaining the specified ratio.
 					</p>
 				</div>
 			</AspectRatio>

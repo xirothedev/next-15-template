@@ -8,15 +8,11 @@ export default function AlertDemo() {
 			<Alert>
 				<CheckCircle2Icon />
 				<AlertTitle>Success! Your changes have been saved</AlertTitle>
-				<AlertDescription>
-					This is an alert with icon, title and description.
-				</AlertDescription>
+				<AlertDescription>This is an alert with icon, title and description.</AlertDescription>
 			</Alert>
 			<Alert>
 				<PopcornIcon />
-				<AlertTitle>
-					This Alert has a title and an icon. No description.
-				</AlertTitle>
+				<AlertTitle>This Alert has a title and an icon. No description.</AlertTitle>
 			</Alert>
 			<Alert variant="destructive">
 				<AlertCircleIcon />

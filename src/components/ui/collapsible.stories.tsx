@@ -1,9 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
-import {
-	Collapsible,
-	CollapsibleTrigger,
-	CollapsibleContent,
-} from "./collapsible";
+import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "./collapsible";
 import { useState } from "react";
 import { Button } from "@/components/ui/button"; // hoặc thay thế bằng <button>
 
@@ -33,8 +29,8 @@ export const Default: Story = {
 				</CollapsibleTrigger>
 				<CollapsibleContent>
 					<div className="rounded-md border p-4">
-						This is the collapsible content. You can put anything here like
-						text, forms, or other components.
+						This is the collapsible content. You can put anything here like text, forms, or other
+						components.
 					</div>
 				</CollapsibleContent>
 			</Collapsible>

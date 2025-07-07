@@ -189,7 +189,7 @@ export const LastPage: Story = {
 // Pagination with custom styling
 export const CustomStyling: Story = {
 	render: () => (
-		<Pagination className="bg-muted p-4 rounded-lg">
+		<Pagination className="bg-muted rounded-lg p-4">
 			<PaginationContent>
 				<PaginationItem>
 					<PaginationPrevious href="#" />
@@ -297,9 +297,7 @@ export const NavigationOnly: Story = {
 export const WithPageInfo: Story = {
 	render: () => (
 		<div className="flex items-center justify-between">
-			<div className="text-sm text-muted-foreground">
-				Showing 1 to 10 of 100 results
-			</div>
+			<div className="text-muted-foreground text-sm">Showing 1 to 10 of 100 results</div>
 			<Pagination>
 				<PaginationContent>
 					<PaginationItem>
@@ -333,8 +331,8 @@ export const WithItemsPerPage: Story = {
 	render: () => (
 		<div className="flex items-center justify-between">
 			<div className="flex items-center gap-2">
-				<span className="text-sm text-muted-foreground">Items per page:</span>
-				<select className="h-8 w-16 rounded border border-input bg-background px-2 text-sm">
+				<span className="text-muted-foreground text-sm">Items per page:</span>
+				<select className="border-input bg-background h-8 w-16 rounded border px-2 text-sm">
 					<option value="10">10</option>
 					<option value="20">20</option>
 					<option value="50">50</option>

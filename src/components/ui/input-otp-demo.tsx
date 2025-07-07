@@ -2,12 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "./button";
-import {
-	InputOTP,
-	InputOTPGroup,
-	InputOTPSlot,
-	InputOTPSeparator,
-} from "./input-otp";
+import { InputOTP, InputOTPGroup, InputOTPSlot, InputOTPSeparator } from "./input-otp";
 import type { SlotProps } from "input-otp";
 
 interface InputOTPDemoProps {
@@ -70,33 +65,18 @@ export function InputOTPDemo({
 			return (
 				<>
 					{slots.slice(0, 3).map((slot, index) => (
-						<InputOTPSlot
-							key={index}
-							{...slot}
-							index={index}
-							className={getSlotClassName()}
-						/>
+						<InputOTPSlot key={index} {...slot} index={index} className={getSlotClassName()} />
 					))}
 					<InputOTPSeparator />
 					{slots.slice(3).map((slot, index) => (
-						<InputOTPSlot
-							key={index + 3}
-							{...slot}
-							index={index + 3}
-							className={getSlotClassName()}
-						/>
+						<InputOTPSlot key={index + 3} {...slot} index={index + 3} className={getSlotClassName()} />
 					))}
 				</>
 			);
 		}
 
 		return slots.map((slot, index) => (
-			<InputOTPSlot
-				key={index}
-				{...slot}
-				index={index}
-				className={getSlotClassName()}
-			/>
+			<InputOTPSlot key={index} {...slot} index={index} className={getSlotClassName()} />
 		));
 	};
 
@@ -122,30 +102,19 @@ export function InputOTPDemo({
 						autoFocus={autoFocus}
 						containerClassName={containerClassName}
 						aria-invalid={showValidation ? !isValid : undefined}
-						render={({ slots }) => (
-							<InputOTPGroup>{renderSlots(slots)}</InputOTPGroup>
-						)}
+						render={({ slots }) => <InputOTPGroup>{renderSlots(slots)}</InputOTPGroup>}
 					/>
 					{showClearButton && (
-						<Button
-							variant="outline"
-							size="sm"
-							onClick={handleClear}
-							disabled={!value}
-						>
+						<Button variant="outline" size="sm" onClick={handleClear} disabled={!value}>
 							Clear
 						</Button>
 					)}
 				</div>
 				{showValidation && !isValid && (
-					<p className="text-sm text-destructive">
-						Error: All digits cannot be the same
-					</p>
+					<p className="text-destructive text-sm">Error: All digits cannot be the same</p>
 				)}
 			</div>
-			<div className="text-sm text-muted-foreground">
-				Entered value: {value || "No value entered"}
-			</div>
+			<div className="text-muted-foreground text-sm">Entered value: {value || "No value entered"}</div>
 		</div>
 	);
 }

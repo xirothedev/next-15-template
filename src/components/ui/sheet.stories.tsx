@@ -33,9 +33,7 @@ export const Default: Story = {
 			<SheetContent>
 				<SheetHeader>
 					<SheetTitle>Sheet Title</SheetTitle>
-					<SheetDescription>
-						This is a description for the sheet.
-					</SheetDescription>
+					<SheetDescription>This is a description for the sheet.</SheetDescription>
 				</SheetHeader>
 				<div className="p-4">Sheet main content goes here.</div>
 				<SheetFooter>

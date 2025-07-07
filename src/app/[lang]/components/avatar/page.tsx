@@ -8,10 +8,7 @@ export default function AvatarDemo() {
 				<AvatarFallback>CN</AvatarFallback>
 			</Avatar>
 			<Avatar className="rounded-lg">
-				<AvatarImage
-					src="https://github.com/evilrabbit.png"
-					alt="@evilrabbit"
-				/>
+				<AvatarImage src="https://github.com/evilrabbit.png" alt="@evilrabbit" />
 				<AvatarFallback>ER</AvatarFallback>
 			</Avatar>
 			<div className="*:data-[slot=avatar]:ring-background flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:grayscale">
@@ -24,10 +21,7 @@ export default function AvatarDemo() {
 					<AvatarFallback>LR</AvatarFallback>
 				</Avatar>
 				<Avatar>
-					<AvatarImage
-						src="https://github.com/evilrabbit.png"
-						alt="@evilrabbit"
-					/>
+					<AvatarImage src="https://github.com/evilrabbit.png" alt="@evilrabbit" />
 					<AvatarFallback>ER</AvatarFallback>
 				</Avatar>
 			</div>

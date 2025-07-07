@@ -1,13 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
-import {
-	Card,
-	CardHeader,
-	CardTitle,
-	CardDescription,
-	CardContent,
-	CardFooter,
-	CardAction,
-} from "./card";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter, CardAction } from "./card";
 import { Button } from "./button";
 
 const meta = {
@@ -32,8 +24,8 @@ export const Default: Story = {
 			</CardHeader>
 			<CardContent>
 				<p>
-					This is some content inside the card. You can place anything here like
-					text, form fields, images, etc.
+					This is some content inside the card. You can place anything here like text, form fields, images,
+					etc.
 				</p>
 			</CardContent>
 			<CardFooter>
@@ -48,9 +40,7 @@ export const WithAction: Story = {
 		<Card>
 			<CardHeader>
 				<CardTitle>Card with Action</CardTitle>
-				<CardDescription>
-					This card has a top-right action button.
-				</CardDescription>
+				<CardDescription>This card has a top-right action button.</CardDescription>
 				<CardAction>
 					<Button size="sm" variant="outline">
 						Edit
@@ -58,10 +48,7 @@ export const WithAction: Story = {
 				</CardAction>
 			</CardHeader>
 			<CardContent>
-				<p>
-					You can place action buttons in the top-right using the CardAction
-					slot.
-				</p>
+				<p>You can place action buttons in the top-right using the CardAction slot.</p>
 			</CardContent>
 		</Card>
 	),

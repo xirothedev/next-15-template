@@ -46,10 +46,7 @@ export const Default: Story = {
 // Simple toast
 export const Simple: Story = {
 	render: () => (
-		<Button
-			variant="outline"
-			onClick={() => toast("This is a simple toast message")}
-		>
+		<Button variant="outline" onClick={() => toast("This is a simple toast message")}>
 			Simple Toast
 		</Button>
 	),
@@ -282,7 +279,7 @@ export const RichContent: Story = {
 				toast("New message received", {
 					description: (
 						<div className="flex items-center gap-2">
-							<div className="w-2 h-2 bg-green-500 rounded-full" />
+							<div className="h-2 w-2 rounded-full bg-green-500" />
 							<span>John Doe sent you a message</span>
 						</div>
 					),

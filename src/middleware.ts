@@ -15,9 +15,7 @@ function getLocale(request: NextRequest): string | undefined {
 	const locales: string[] = i18n.locales;
 
 	// Use negotiator and intl-localematcher to get best locale
-	const languages = new Negotiator({ headers: negotiatorHeaders }).languages(
-		locales,
-	);
+	const languages = new Negotiator({ headers: negotiatorHeaders }).languages(locales);
 
 	const locale = matchLocale(languages, locales, i18n.defaultLocale);
 
@@ -40,8 +38,7 @@ export function middleware(request: NextRequest) {
 
 	// Check if there is any supported locale in the pathname
 	const pathnameIsMissingLocale = i18n.locales.every(
-		(locale) =>
-			!pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`,
+		(locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`,
 	);
 
 	// Redirect if there is no locale
@@ -51,10 +48,7 @@ export function middleware(request: NextRequest) {
 		// e.g. incoming request is /products
 		// The new URL is now /en-US/products
 		return NextResponse.redirect(
-			new URL(
-				`/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`,
-				request.url,
-			),
+			new URL(`/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`, request.url),
 		);
 	}
 }

@@ -4,7 +4,7 @@
   <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/node-%3E=18.0.0-green?logo=node.js" alt="Node version" /></a>
   <a href="https://github.com/xirothedev/next-15-template/blob/main/LICENSE"><img src="https://img.shields.io/github/license/xirothedev/next-15-template?color=blue" alt="License" /></a>
   <a href="https://github.com/xirothedev/next-15-template/actions"><img src="https://github.com/xirothedev/next-15-template/actions/workflows/ci.yml/badge.svg" alt="Build Status" /></a>
-  <a href="https://biomejs.dev/"><img src="https://img.shields.io/badge/code_style-biome-5B5B5B?logo=biome" alt="Biome" /></a>
+  <a href="https://prettier.io/"><img src="https://img.shields.io/badge/code_style-prettier-F7B93E?logo=prettier" alt="Prettier" /></a>
   <a href="https://eslint.org/"><img src="https://img.shields.io/badge/lint-eslint-4B32C3?logo=eslint" alt="ESLint" /></a>
   <a href="https://pnpm.io/"><img src="https://img.shields.io/badge/package%20manager-pnpm-F69220?logo=pnpm" alt="pnpm" /></a>
 </p>
@@ -41,7 +41,7 @@ This repository serves as a starter template for Next.js 15 projects. It include
 - [TypeScript](https://www.typescriptlang.org/)
 - [pnpm](https://pnpm.io/) (package manager)
 - [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/)
-- [Tailwind CSS](https://tailwindcss.com/) *(optional, remove if not used)*
+- [Tailwind CSS](https://tailwindcss.com/) _(optional, remove if not used)_
 
 ---
 
@@ -55,19 +55,19 @@ This repository serves as a starter template for Next.js 15 projects. It include
 ### Installation
 
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/xirothedev/next-15-template.git
-   cd next-15-template
-   ```
+    ```bash
+    git clone https://github.com/xirothedev/next-15-template.git
+    cd next-15-template
+    ```
 2. **Install dependencies:**
-   ```bash
-   pnpm install
-   ```
+    ```bash
+    pnpm install
+    ```
 3. **Run the development server:**
-   ```bash
-   pnpm dev
-   ```
-   Open [http://localhost:3000](http://localhost:3000) to view the app.
+    ```bash
+    pnpm dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) to view the app.
 
 ---
 
@@ -78,7 +78,7 @@ This repository serves as a starter template for Next.js 15 projects. It include
 - `pnpm start` — Start the production server
 - `pnpm lint` — Run ESLint for code quality
 - `pnpm format` — Format code with Prettier
-- `pnpm test` — Run tests *(if test setup is included)*
+- `pnpm test` — Run tests _(if test setup is included)_
 
 ---
 

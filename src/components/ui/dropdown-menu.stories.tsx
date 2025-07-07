@@ -63,9 +63,7 @@ export const Default: Story = {
 						<DropdownMenuShortcut>⌘A</DropdownMenuShortcut>
 					</DropdownMenuItem>
 
-					<DropdownMenuItem variant="destructive">
-						Delete account
-					</DropdownMenuItem>
+					<DropdownMenuItem variant="destructive">Delete account</DropdownMenuItem>
 
 					<DropdownMenuSub>
 						<DropdownMenuSubTrigger>More tools</DropdownMenuSubTrigger>

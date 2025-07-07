@@ -43,9 +43,7 @@ export const Default: Story = {
 					<div className="mx-auto w-full max-w-sm">
 						<DrawerHeader>
 							<DrawerTitle>Move Goal</DrawerTitle>
-							<DrawerDescription>
-								Set your daily activity goal.
-							</DrawerDescription>
+							<DrawerDescription>Set your daily activity goal.</DrawerDescription>
 						</DrawerHeader>
 						<div className="p-4 pb-0">
 							<div className="flex items-center justify-center space-x-2">
@@ -60,12 +58,8 @@ export const Default: Story = {
 									<span className="sr-only">Decrease</span>
 								</Button>
 								<div className="flex-1 text-center">
-									<div className="text-7xl font-bold tracking-tighter">
-										{goal}
-									</div>
-									<div className="text-muted-foreground text-[0.70rem] uppercase">
-										Calories/day
-									</div>
+									<div className="text-7xl font-bold tracking-tighter">{goal}</div>
+									<div className="text-muted-foreground text-[0.70rem] uppercase">Calories/day</div>
 								</div>
 								<Button
 									variant="outline"
@@ -103,14 +97,12 @@ export const Simple: Story = {
 				<div className="mx-auto w-full max-w-sm">
 					<DrawerHeader>
 						<DrawerTitle>Simple Drawer</DrawerTitle>
-						<DrawerDescription>
-							This is a simple drawer with basic content.
-						</DrawerDescription>
+						<DrawerDescription>This is a simple drawer with basic content.</DrawerDescription>
 					</DrawerHeader>
 					<div className="p-4">
-						<p className="text-sm text-muted-foreground">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						<p className="text-muted-foreground text-sm">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua.
 						</p>
 					</div>
 					<DrawerFooter>
@@ -136,11 +128,9 @@ export const WithForm: Story = {
 				<div className="mx-auto w-full max-w-sm">
 					<DrawerHeader>
 						<DrawerTitle>Create New Item</DrawerTitle>
-						<DrawerDescription>
-							Fill out the form below to create a new item.
-						</DrawerDescription>
+						<DrawerDescription>Fill out the form below to create a new item.</DrawerDescription>
 					</DrawerHeader>
-					<div className="p-4 space-y-4">
+					<div className="space-y-4 p-4">
 						<div className="space-y-2">
 							<label htmlFor="name" className="text-sm font-medium">
 								Name
@@ -149,7 +139,7 @@ export const WithForm: Story = {
 								id="name"
 								type="text"
 								placeholder="Enter name"
-								className="w-full px-3 py-2 border rounded-md"
+								className="w-full rounded-md border px-3 py-2"
 							/>
 						</div>
 						<div className="space-y-2">
@@ -159,7 +149,7 @@ export const WithForm: Story = {
 							<textarea
 								id="description"
 								placeholder="Enter description"
-								className="w-full px-3 py-2 border rounded-md"
+								className="w-full rounded-md border px-3 py-2"
 								rows={3}
 							/>
 						</div>
@@ -167,10 +157,7 @@ export const WithForm: Story = {
 							<label htmlFor="category" className="text-sm font-medium">
 								Category
 							</label>
-							<select
-								id="category"
-								className="w-full px-3 py-2 border rounded-md"
-							>
+							<select id="category" className="w-full rounded-md border px-3 py-2">
 								<option>Select category</option>
 								<option>Category 1</option>
 								<option>Category 2</option>
@@ -201,9 +188,7 @@ export const WithList: Story = {
 				<div className="mx-auto w-full max-w-sm">
 					<DrawerHeader>
 						<DrawerTitle>Settings</DrawerTitle>
-						<DrawerDescription>
-							Manage your application settings.
-						</DrawerDescription>
+						<DrawerDescription>Manage your application settings.</DrawerDescription>
 					</DrawerHeader>
 					<div className="p-4">
 						<div className="space-y-2">
@@ -217,10 +202,10 @@ export const WithList: Story = {
 							].map((item, index) => (
 								<div
 									key={index}
-									className="flex items-center justify-between p-3 border rounded-lg hover:bg-muted cursor-pointer"
+									className="hover:bg-muted flex cursor-pointer items-center justify-between rounded-lg border p-3"
 								>
 									<span className="text-sm">{item}</span>
-									<Plus className="h-4 w-4 text-muted-foreground" />
+									<Plus className="text-muted-foreground h-4 w-4" />
 								</div>
 							))}
 						</div>
@@ -241,36 +226,31 @@ export const CustomStyling: Story = {
 	render: (args) => (
 		<Drawer {...args}>
 			<DrawerTrigger asChild>
-				<Button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white border-0">
+				<Button className="border-0 bg-gradient-to-r from-purple-500 to-pink-500 text-white">
 					Open Custom Drawer
 				</Button>
 			</DrawerTrigger>
 			<DrawerContent className="bg-gradient-to-br from-slate-50 to-slate-100">
 				<div className="mx-auto w-full max-w-sm">
 					<DrawerHeader className="text-center">
-						<DrawerTitle className="text-slate-800">
-							Custom Styled Drawer
-						</DrawerTitle>
+						<DrawerTitle className="text-slate-800">Custom Styled Drawer</DrawerTitle>
 						<DrawerDescription className="text-slate-600">
 							This drawer has custom styling applied.
 						</DrawerDescription>
 					</DrawerHeader>
 					<div className="p-4">
-						<div className="bg-white rounded-lg p-4 shadow-sm border border-slate-200">
+						<div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
 							<p className="text-sm text-slate-700">
 								This content area has a white background with custom styling.
 							</p>
 						</div>
 					</div>
 					<DrawerFooter>
-						<Button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white border-0">
+						<Button className="border-0 bg-gradient-to-r from-purple-500 to-pink-500 text-white">
 							Custom Button
 						</Button>
 						<DrawerClose asChild>
-							<Button
-								variant="outline"
-								className="border-slate-300 text-slate-700"
-							>
+							<Button variant="outline" className="border-slate-300 text-slate-700">
 								Cancel
 							</Button>
 						</DrawerClose>
@@ -292,14 +272,11 @@ export const WithoutFooter: Story = {
 				<div className="mx-auto w-full max-w-sm">
 					<DrawerHeader>
 						<DrawerTitle>No Footer Drawer</DrawerTitle>
-						<DrawerDescription>
-							This drawer doesn&apos;t have a footer section.
-						</DrawerDescription>
+						<DrawerDescription>This drawer doesn&apos;t have a footer section.</DrawerDescription>
 					</DrawerHeader>
 					<div className="p-4">
-						<p className="text-sm text-muted-foreground">
-							You can close this drawer by clicking outside or using the escape
-							key.
+						<p className="text-muted-foreground text-sm">
+							You can close this drawer by clicking outside or using the escape key.
 						</p>
 					</div>
 				</div>
