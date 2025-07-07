@@ -86,7 +86,6 @@
 		"eslint-plugin-storybook": "^9.0.13",
 		"fluid-tailwind": "1.0.4",
 		"husky": "9.1.7",
-		"lint-staged": "16.1.2",
 		"playwright": "^1.53.1",
 		"prettier": "3.6.2",
 		"prettier-plugin-tailwindcss": "0.6.13",
@@ -98,22 +97,6 @@
 	},
 	"overrides": {
 		"react-is": "^19.0.0-rc-69d4b800-20241021"
-	},
-	"husky": {
-		"hooks": {
-			"commit-msg": "npx --no -- commitlint --edit $1",
-			"pre-commit": "npx --no -- lint-staged"
-		}
-	},
-	"lint-staged": {
-		"*.{ts,tsx,js,jsx}": [
-			"next lint",
-			"git add ."
-		],
-		"*.{json,css,html,md}": [
-			"prettier --write --ignore-unknown",
-			"git add ."
-		]
 	},
 	"config": {
 		"commitizen": {
