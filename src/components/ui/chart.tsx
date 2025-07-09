@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unnecessary-condition */
 "use client";
 
 import type { NameType, ValueType } from "recharts/types/component/DefaultTooltipContent";
