@@ -123,6 +123,6 @@ Contributions are welcome! Please open issues or submit pull requests for improv
 - [FUNDING](/.github/FUNDING.yml)
 - [PULL REQUEST TEMPLATE](/.github/PULL_REQUEST_TEMPLATE.md)
 - [LICENSE](/LICENSE)
-- [Discord server](https://discord.gg/GsYF4xceZZ)
+- [Discord server](https://discord.gg/3J8t3g8dCj)
 - [Facebook](https://www.facebook.com/xirothedev/)
 - [Email](lethanhtrung.trungle@gmail.com)

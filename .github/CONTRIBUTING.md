@@ -20,7 +20,7 @@ Please read and follow our [Code of Conduct](./CODE_OF_CONDUCT.md).
 ## Question or Problem?
 
 Do not open issues for general support questions as we want to keep GitHub issues for bug reports and feature requests.
-Instead, we recommend using our [Discord Server](https://discord.gg/GsYF4xceZZ) to ask support-related questions.
+Instead, we recommend using our [Discord Server](https://discord.gg/3J8t3g8dCj) to ask support-related questions.
 
 Discord is a much better place to ask questions since:
 - There are community people willing to help
